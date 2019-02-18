@@ -1,7 +1,8 @@
+import {merge} from 'lodash'
+
 require('dotenv').config();
 
-const merge = require('lodash').merge();
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV;
 
 const baseConfig = {
   env,
