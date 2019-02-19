@@ -40,13 +40,13 @@ describe('User model', () => {
       })
     });
 
-    test('name', () => {
-      // const first = User.schema.obj.firstName;
-      // const last = User.schema.obj.lastName;
-      const name = User.schema.obj.name;
-      // expect(name).toEqual(first + ' ' + last)
-      expect(name).toEqual(String)
-    });
+    // test('name', () => {
+    //   // const first = User.schema.obj.firstName;
+    //   // const last = User.schema.obj.lastName;
+    //   const name = User.schema.obj.name;
+    //   // expect(name).toEqual(first + ' ' + last)
+    //   expect(name).toEqual(String)
+    // });
 
     // test('url', () => {
     //   const url = User.schema.obj.url;
