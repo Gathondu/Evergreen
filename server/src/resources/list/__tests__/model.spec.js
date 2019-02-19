@@ -1,3 +1,4 @@
+import {User} from "../../user/model";
 import {List} from '../model'
 import mongoose from 'mongoose'
 
@@ -30,6 +31,11 @@ describe('List model', () => {
     test('modified', () => {
       const modified = List.schema.obj.modified;
       expect(modified).toEqual(Date)
+    });
+
+    test('url', () => {
+      const url = User.schema.obj.url;
+      expect(url).toEqual(String)
     });
   });
 });

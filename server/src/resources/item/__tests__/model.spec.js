@@ -1,3 +1,4 @@
+import {User} from "../../user/model";
 import { Item } from '../model'
 import mongoose from 'mongoose'
 
@@ -45,6 +46,11 @@ describe('Item model', () => {
         ref: 'list',
         required: true
       })
+    });
+
+    test('url', () => {
+      const url = User.schema.obj.url;
+      expect(url).toEqual(String)
     });
   });
 });
