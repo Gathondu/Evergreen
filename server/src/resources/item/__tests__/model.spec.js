@@ -1,4 +1,3 @@
-import {User} from "../../user/model";
 import { Item } from '../model'
 import mongoose from 'mongoose'
 
@@ -10,7 +9,7 @@ describe('Item model', () => {
         type: String,
         required: true,
         trim: true,
-        maxLength: 50
+        maxlength: 50
       })
     });
 
@@ -49,7 +48,7 @@ describe('Item model', () => {
     });
 
     test('url', () => {
-      const url = User.schema.obj.url;
+      const url = Item.schema.obj.url;
       expect(url).toEqual(String)
     });
   });
