@@ -30,4 +30,6 @@ itemSchema
     return '/item/' + this._id;
   });
 
+itemSchema.index({list: 1, name: 1}, {unique: true});
+
 export const Item = mongoose.model('item', itemSchema);
