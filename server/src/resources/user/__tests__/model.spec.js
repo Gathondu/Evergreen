@@ -48,9 +48,9 @@ describe('User model', () => {
       expect(name).toEqual(String)
     });
 
-    test('url', () => {
-      const url = User.schema.obj.url;
-      expect(url).toEqual(String)
-    });
+    // test('url', () => {
+    //   const url = User.schema.obj.url;
+    //   expect(url).toEqual(String)
+    // });
   });
 });

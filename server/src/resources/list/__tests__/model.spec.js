@@ -9,7 +9,7 @@ describe('List model', () => {
         type:String,
         required: true,
         trim: true,
-        maxlength: 50,
+        maxlength: 50
       })
     });
 
@@ -32,9 +32,9 @@ describe('List model', () => {
       expect(modified).toEqual(Date)
     });
 
-    test('url', () => {
-      const url = List.schema.obj.url;
-      expect(url).toEqual(String)
-    });
+    // test('url', () => {
+    //   const url = List.schema.obj.url;
+    //   expect(url).toEqual(Function)
+    // });
   });
 });

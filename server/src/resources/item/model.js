@@ -21,8 +21,13 @@ const itemSchema = new mongoose.Schema({
     ref:'list',
     required: true
   }
-});
+},
+{timestamps: true});
 
-itemSchema.virtual('url').get(() => { return '/item/' + this._id});
+itemSchema
+  .virtual('url')
+  .get(function () {
+    return '/item/' + this._id;
+  });
 
 export const Item = mongoose.model('item', itemSchema);
